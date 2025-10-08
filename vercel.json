@@ -1,15 +1,14 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/index.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/*.js": {
+      "runtime": "@vercel/node@5.1.8"
     }
-  ],
+  },
+  "outputDirectory": "src/static",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "src/index.js"
-    }
+    { "handle": "filesystem" },
+    { "src": "/grok(.*)", "dest": "/api/vercel_index.js" },
+    { "src": "/(.*)", "dest": "/api/vercel_index.js" }
   ]
 }
