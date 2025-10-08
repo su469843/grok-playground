@@ -15,7 +15,7 @@
 支持Netlify/Deno/Cloudflare Worker无服务器免费部署。
 <b>建议用服务器部署，最近Grok加强了风控，使用IP干净的云服务部署最保险</b>
 无服务器部署可能因为IP不干净被Cloudflare盾,（如果被盾，尝试刷新几次页面换个IP）
-
+www
 ## 服务器部署[推荐]
 0. 准备一台海外IP的云服务器，香港也可以
 1. git clone https://github.com/tech-shrimp/grok-playground
